@@ -70,9 +70,12 @@ input[type=range]::-webkit-slider-thumb {
 
 .color-box {
   width: 42px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
+  border-left: 1px solid #d0d1d3;
+  border-right: 1px solid #d0d1d3; */
+  
   border-left: 1px solid #d0d1d3;
   border-right: 1px solid #d0d1d3;
 }
@@ -89,16 +92,23 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .color-box-ranges {
-  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 35px;
   border: 1px solid black;
-  width: 170px;
   position: absolute;
-  box-shadow: 0 0 10px rgb(70, 117, 138)
+  box-shadow: 0 0 10px rgb(70, 117, 138);
+  padding-left: 10px;
 }
 
 .color-box-range-btn {
+  position: relative;
   width: 15px;
   height: 15px;
+  bottom: -13px;
+  left: 13px;
 }
 
 .color-menu {
